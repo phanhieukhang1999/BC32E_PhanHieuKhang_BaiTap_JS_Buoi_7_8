@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS buổi 7 8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="project">
+      <div class="container py-5">
+        <div class="card mx-auto">
+            <h3 class="mx-auto">Người dùng thêm 1 số vào mảng</h3>
+            <div class="form-group row">
+                <div class="col-4 ml-4">
+                  <input
+                    class="form-control"
+                    id="nhapSo"
+                    placeholder="Nhập số n"
+                  />
+                </div>
+               
+                
+                <div class="col-4 ">
+                  <button class="btn btn-primary" id="btnThemSo">
+                    Thêm số
+                </div>
+              </div>
+            <div class="alert alert-primary mt-2" id="ketQua"></div>
+            <hr/>
+          <!-- Nav pills -->
+          <ul class="nav nav-pills jutify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#bai1"
+                >Bài 1</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#bai2">Bài 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai3">Bài 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai4">Bài 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai5">Bài 5</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai6">Bài 6</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai7">Bài 7</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai8">Bài 8</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai9">Bài 9</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai10">Bài 10</a>
+            </li>
+          </ul>
+          <hr />
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane container active" id="bai1">
+              <h3>Tổng các số dương trong mảng</h3>
+              <div class="form-group row">
+                <div class="col-4 ">
+                  <button class="btn btn-primary" id="btnTinhTong">
+                    Tính tổng
+                </div>
+              </div>
+              <div
+                class="form-group mt-2 alert alert-success"
+                id="ketQua_b1"
+              ></div>
+            </div>
+            <div class="tab-pane container" id="bai2">
+                <h3>Đếm có bao nhiêu số dương trong mảng.</h3>
+                <div class="form-group row">
+                  <div class="col-4 ">
+                    <button class="btn btn-primary" id="btnDemSoDuong">
+                      Đếm số
+                  </div>
+                </div>
+                <div
+                  class="form-group mt-2 alert alert-success"
+                  id="ketQua_b2"
+                ></div>
+            </div>
+            <div class="tab-pane container" id="bai3">
+                <h3> Tìm số nhỏ nhất trong mảng</h3>
+                <div class="form-group row">
+                  <div class="col-4 ">
+                    <button class="btn btn-primary" id="btnTimMin">
+                      Tìm số nhỏ nhất
+                  </div>
+                </div>
+                <div
+                  class="form-group mt-2 alert alert-success"
+                  id="ketQua_b3"
+                ></div>
+            </div>
+            <div class="tab-pane container" id="bai4">
+                <h3> Tìm số dương nhỏ nhất trong mảng</h3>
+                <div class="form-group row">
+                  <div class="col-4 ">
+                    <button class="btn btn-primary" id="btnTimMinDuong">
+                      Tìm số dương nhỏ nhất
+                  </div>
+                </div>
+                <div
+                  class="form-group mt-2 alert alert-success"
+                  id="ketQua_b4"
+                ></div>
+            </div>
+            <div class="tab-pane container" id="bai5">
+                <h3> Tìm số chẵn cuối cùng trong mảng</h3>
+                <div class="form-group row">
+                  <div class="col-4 ">
+                    <button class="btn btn-primary" id="btnTimChanCuoi">
+                      Tìm số chẵn cuối cùng
+                  </div>
+                </div>
+                <div
+                  class="form-group mt-2 alert alert-success"
+                  id="ketQua_b5"
+                ></div>
+            </div>
+            <div class="tab-pane container" id="bai6">
+                <h3>Đổi chỗ</h3>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <input
+                        class="form-control"
+                        id="nhapViTri1"
+                        placeholder="Nhập vị trí 1"
+                        type="number"
+                      />
+                    </div>
+                    <div class="col-4">
+                        <input
+                        class="form-control"
+                        id="nhapViTri2"
+                        placeholder="Nhập vị trí 2"
+                        type="number"
+                      />
+                    </div>
+
+                  <div class="col-4 ">
+                    <button class="btn btn-primary" id="btnDoiCho" >
+                      Đổi chỗ
+                  </div>
+                </div>
+                <div
+                  class="form-group mt-2 alert alert-success"
+                  id="ketQua_b6"
+                ></div>
+            </div>
+            <div class="tab-pane container" id="bai7">
+                <h3>Sắp xếp tăng dần trong mảng</h3>
+                <div class="form-group row">
+                  <div class="col-4 ">
+                    <button class="btn btn-primary" id="btnSapXepTang">
+                      Sắp xếp
+                  </div>
+                </div>
+                <div
+                  class="form-group mt-2 alert alert-success"
+                  id="ketQua_b7"
+                ></div>
+            </div>
+            <div class="tab-pane container" id="bai8">
+                <h3> Tìm số nguyên tố đầu tiên trong mảng</h3>
+                <div class="form-group row">
+                  <div class="col-4 ">
+                    <button class="btn btn-primary" id="btnTimSoNguyenTo">
+                      Tìm số nguyên tố
+                  </div>
+                </div>
+                <div
+                  class="form-group mt-2 alert alert-success"
+                  id="ketQua_b8"
+                ></div>
+            </div>
+            <div class="tab-pane container" id="bai9">
+                <h3>Đếm số nguyên</h3>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <input
+                        class="form-control"
+                        id="nhapSo_1"
+                        placeholder="Nhập số"
+                        type="number"
+                      />
+                    </div>
+                    
+
+                  <div class="col-4 ">
+                    <button class="btn btn-primary" id="btnThemSo_1">
+                      Thêm số
+                  </div>
+                </div>
+                <div
+                  class="form-group mt-2 alert alert-success"
+                  id="ketQua_b9"
+                ></div>
+                <div class="col-4 ">
+                    <button class="btn btn-primary" id="btnDemSoNguyen">
+                      Đếm số nguyên
+                  </div>
+                  <div
+                  class="form-group mt-2 alert alert-success"
+                  id="ketQua_b9_1"
+                ></div>
+            </div>
+            <div class="tab-pane container" id="bai10">
+                <h3>So sánh số lượng âm và dương</h3>
+                <div class="form-group row">
+                  <div class="col-4 ">
+                    <button class="btn btn-primary" id="btnSoSanh">
+                      So sánh
+                  </div>
+                </div>
+                <div
+                  class="form-group mt-2 alert alert-success"
+                  id="ketQua_b10"
+                ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
